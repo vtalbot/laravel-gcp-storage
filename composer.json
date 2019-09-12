@@ -20,7 +20,7 @@
         "php": "~7.2",
         "illuminate/support": "~6.0",
         "illuminate/filesystem": "~6.0",
-        "talbot-ninja/flysystem-gcp-storage": "~1.0"
+        "talbot-ninja/flysystem-gcp-storage": "~v1.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "~3.4"
