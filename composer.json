@@ -1,0 +1,50 @@
+{
+    "name": "talbot-ninja/laravel-gcp-storage",
+    "description": "Google GCP Storage for Laravel",
+    "keywords": [
+        "laravel",
+        "gcp",
+        "storage"
+    ],
+    "homepage": "https://github.com/vtalbot/laravel-gcp-storage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Talbot",
+            "email": "vincent.talbot@gmail.com",
+            "homepage": "https://github.com/vtalbot",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.2",
+        "illuminate/support": "~6.0",
+        "illuminate/filesystem": "~6.0",
+        "talbot-ninja/flysystem-gcp-storage": "~1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "TalbotNinja\\LaravelGCPStorage\\": "src"
+        }
+    },
+    "scripts": {
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "TalbotNinja\\LaravelGCPStorage\\GCPStorageServiceProvider"
+            ]
+        }
+    }
+}
